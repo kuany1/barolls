@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order on WhatsApp | BAROLLS Arua</title>
+<meta name="description" content="Build your BAROLLS order, check the total in UGX and send it on WhatsApp. No online payment — we confirm every order with you.">
+<link rel="canonical" href="{{SITE_URL}}/order.html">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0B0B0B">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BAROLLS">
+<meta property="og:title" content="Order on WhatsApp | BAROLLS Arua">
+<meta property="og:description" content="Build your BAROLLS order, check the total in UGX and send it on WhatsApp. No online payment — we confirm every order with you.">
+<meta property="og:url" content="{{SITE_URL}}/order.html">
+<meta property="og:image" content="{{SITE_URL}}/images/og-barolls.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BAROLLS logo next to a chapati-wrapped Baroll">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Order on WhatsApp | BAROLLS Arua">
+<meta name="twitter:description" content="Build your BAROLLS order, check the total in UGX and send it on WhatsApp. No online payment — we confirm every order with you.">
+<meta name="twitter:image" content="{{SITE_URL}}/images/og-barolls.jpg">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preload" href="fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="BAROLLS home">
+      <img src="images/logo-mark.webp" alt="" width="160" height="160">
+      <span class="nav-brand-name">BAROLLS</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="menu.html">Menu</a><a href="order.html">Order</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-info">
+      <span class="nav-chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-today-hours>Mon – Fri: 7:00 AM – 10:00 PM</span></span>
+      <a class="nav-chip" href="tel:+256765068833"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+256 765 068833</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-header">
+  <div class="container">
+    <p class="section-eyebrow">No app. No account. No online payment.</p>
+    <h1>Order on WhatsApp</h1>
+    <p>Choose your items, review your order, then send it to BAROLLS on WhatsApp. Your order is not confirmed until we reply.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container order-layout">
+    <form id="orderForm" class="order-form" novalidate>
+      <div class="order-block">
+        <h2 class="order-h">1. Choose your items</h2>
+        <p class="text-muted">Use + and − to set how many of each item you want. Prices are in UGX.</p>
+          <div class="order-cat">
+            <h3>Barolls &amp; Wraps</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="Chicken Baroll" data-price="10000">
+              <div class="order-item-info"><span class="order-item-name">Chicken Baroll</span><span class="order-item-price">UGX 10,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Chicken Baroll">
+                <button type="button" data-q="-1" aria-label="Remove one Chicken Baroll">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Chicken Baroll quantity">
+                <button type="button" data-q="1" aria-label="Add one Chicken Baroll">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Beef Baroll" data-price="10000">
+              <div class="order-item-info"><span class="order-item-name">Beef Baroll</span><span class="order-item-price">UGX 10,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Beef Baroll">
+                <button type="button" data-q="-1" aria-label="Remove one Beef Baroll">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Beef Baroll quantity">
+                <button type="button" data-q="1" aria-label="Add one Beef Baroll">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Veggie Baroll" data-price="6000">
+              <div class="order-item-info"><span class="order-item-name">Veggie Baroll</span><span class="order-item-price">UGX 6,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Veggie Baroll">
+                <button type="button" data-q="-1" aria-label="Remove one Veggie Baroll">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Veggie Baroll quantity">
+                <button type="button" data-q="1" aria-label="Add one Veggie Baroll">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Fries Wrap" data-price="12000">
+              <div class="order-item-info"><span class="order-item-name">Fries Wrap</span><span class="order-item-price">UGX 12,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Fries Wrap">
+                <button type="button" data-q="-1" aria-label="Remove one Fries Wrap">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Fries Wrap quantity">
+                <button type="button" data-q="1" aria-label="Add one Fries Wrap">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Signature Baroll" data-price="15000">
+              <div class="order-item-info"><span class="order-item-name">Signature Baroll</span><span class="order-item-price">UGX 15,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Signature Baroll">
+                <button type="button" data-q="-1" aria-label="Remove one Signature Baroll">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Signature Baroll quantity">
+                <button type="button" data-q="1" aria-label="Add one Signature Baroll">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Beef/Chicken Combo" data-price="12000">
+              <div class="order-item-info"><span class="order-item-name">Beef/Chicken Combo</span><span class="order-item-price">UGX 12,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Beef/Chicken Combo">
+                <button type="button" data-q="-1" aria-label="Remove one Beef/Chicken Combo">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Beef/Chicken Combo quantity">
+                <button type="button" data-q="1" aria-label="Add one Beef/Chicken Combo">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="order-cat">
+            <h3>Snack Attack</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="Sausages (a pair)" data-price="3000">
+              <div class="order-item-info"><span class="order-item-name">Sausages (a pair)</span><span class="order-item-price">UGX 3,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Sausages (a pair)">
+                <button type="button" data-q="-1" aria-label="Remove one Sausages (a pair)">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Sausages (a pair) quantity">
+                <button type="button" data-q="1" aria-label="Add one Sausages (a pair)">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Meat Pie" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Meat Pie</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Meat Pie">
+                <button type="button" data-q="-1" aria-label="Remove one Meat Pie">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Meat Pie quantity">
+                <button type="button" data-q="1" aria-label="Add one Meat Pie">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Beef Samosa (a pair)" data-price="3000">
+              <div class="order-item-info"><span class="order-item-name">Beef Samosa (a pair)</span><span class="order-item-price">UGX 3,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Beef Samosa (a pair)">
+                <button type="button" data-q="-1" aria-label="Remove one Beef Samosa (a pair)">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Beef Samosa (a pair) quantity">
+                <button type="button" data-q="1" aria-label="Add one Beef Samosa (a pair)">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Veggie Samosa (a pair)" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Veggie Samosa (a pair)</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Veggie Samosa (a pair)">
+                <button type="button" data-q="-1" aria-label="Remove one Veggie Samosa (a pair)">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Veggie Samosa (a pair) quantity">
+                <button type="button" data-q="1" aria-label="Add one Veggie Samosa (a pair)">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Spring Rolls (a pair)" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Spring Rolls (a pair)</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Spring Rolls (a pair)">
+                <button type="button" data-q="-1" aria-label="Remove one Spring Rolls (a pair)">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Spring Rolls (a pair) quantity">
+                <button type="button" data-q="1" aria-label="Add one Spring Rolls (a pair)">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Milky Chapatis" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Milky Chapatis</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Milky Chapatis">
+                <button type="button" data-q="-1" aria-label="Remove one Milky Chapatis">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Milky Chapatis quantity">
+                <button type="button" data-q="1" aria-label="Add one Milky Chapatis">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Plantain" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Plantain</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Plantain">
+                <button type="button" data-q="-1" aria-label="Remove one Plantain">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Plantain quantity">
+                <button type="button" data-q="1" aria-label="Add one Plantain">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Egg Rolls" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Egg Rolls</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Egg Rolls">
+                <button type="button" data-q="-1" aria-label="Remove one Egg Rolls">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Egg Rolls quantity">
+                <button type="button" data-q="1" aria-label="Add one Egg Rolls">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="order-cat">
+            <h3>Fries</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="Deluxe Fries" data-price="10000">
+              <div class="order-item-info"><span class="order-item-name">Deluxe Fries</span><span class="order-item-price">UGX 10,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Deluxe Fries">
+                <button type="button" data-q="-1" aria-label="Remove one Deluxe Fries">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Deluxe Fries quantity">
+                <button type="button" data-q="1" aria-label="Add one Deluxe Fries">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Signature Fries" data-price="15000">
+              <div class="order-item-info"><span class="order-item-name">Signature Fries</span><span class="order-item-price">UGX 15,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Signature Fries">
+                <button type="button" data-q="-1" aria-label="Remove one Signature Fries">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Signature Fries quantity">
+                <button type="button" data-q="1" aria-label="Add one Signature Fries">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Plain Fries" data-price="5000">
+              <div class="order-item-info"><span class="order-item-name">Plain Fries</span><span class="order-item-price">UGX 5,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Plain Fries">
+                <button type="button" data-q="-1" aria-label="Remove one Plain Fries">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Plain Fries quantity">
+                <button type="button" data-q="1" aria-label="Add one Plain Fries">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Fries &amp; Chicken" data-price="20000">
+              <div class="order-item-info"><span class="order-item-name">Fries &amp; Chicken</span><span class="order-item-price">UGX 20,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Fries &amp; Chicken">
+                <button type="button" data-q="-1" aria-label="Remove one Fries &amp; Chicken">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Fries &amp; Chicken quantity">
+                <button type="button" data-q="1" aria-label="Add one Fries &amp; Chicken">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Burger" data-price="18000">
+              <div class="order-item-info"><span class="order-item-name">Burger</span><span class="order-item-price">UGX 18,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Burger">
+                <button type="button" data-q="-1" aria-label="Remove one Burger">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Burger quantity">
+                <button type="button" data-q="1" aria-label="Add one Burger">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="order-cat">
+            <h3>Tea Selection</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="African Tea" data-price="3000">
+              <div class="order-item-info"><span class="order-item-name">African Tea</span><span class="order-item-price">UGX 3,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of African Tea">
+                <button type="button" data-q="-1" aria-label="Remove one African Tea">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="African Tea quantity">
+                <button type="button" data-q="1" aria-label="Add one African Tea">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Black Tea" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Black Tea</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Black Tea">
+                <button type="button" data-q="-1" aria-label="Remove one Black Tea">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Black Tea quantity">
+                <button type="button" data-q="1" aria-label="Add one Black Tea">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Rosemary / Spiced Tea" data-price="3000">
+              <div class="order-item-info"><span class="order-item-name">Rosemary / Spiced Tea</span><span class="order-item-price">UGX 3,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Rosemary / Spiced Tea">
+                <button type="button" data-q="-1" aria-label="Remove one Rosemary / Spiced Tea">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Rosemary / Spiced Tea quantity">
+                <button type="button" data-q="1" aria-label="Add one Rosemary / Spiced Tea">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Cappuccino" data-price="4000">
+              <div class="order-item-info"><span class="order-item-name">Cappuccino</span><span class="order-item-price">UGX 4,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Cappuccino">
+                <button type="button" data-q="-1" aria-label="Remove one Cappuccino">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Cappuccino quantity">
+                <button type="button" data-q="1" aria-label="Add one Cappuccino">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Dawa Tea" data-price="4000">
+              <div class="order-item-info"><span class="order-item-name">Dawa Tea</span><span class="order-item-price">UGX 4,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Dawa Tea">
+                <button type="button" data-q="-1" aria-label="Remove one Dawa Tea">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Dawa Tea quantity">
+                <button type="button" data-q="1" aria-label="Add one Dawa Tea">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="order-cat">
+            <h3>Juice Mix</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="Mango Juice" data-price="5000">
+              <div class="order-item-info"><span class="order-item-name">Mango Juice</span><span class="order-item-price">UGX 5,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Mango Juice">
+                <button type="button" data-q="-1" aria-label="Remove one Mango Juice">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Mango Juice quantity">
+                <button type="button" data-q="1" aria-label="Add one Mango Juice">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Guava Juice" data-price="5000">
+              <div class="order-item-info"><span class="order-item-name">Guava Juice</span><span class="order-item-price">UGX 5,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Guava Juice">
+                <button type="button" data-q="-1" aria-label="Remove one Guava Juice">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Guava Juice quantity">
+                <button type="button" data-q="1" aria-label="Add one Guava Juice">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Passion Juice" data-price="5000">
+              <div class="order-item-info"><span class="order-item-name">Passion Juice</span><span class="order-item-price">UGX 5,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Passion Juice">
+                <button type="button" data-q="-1" aria-label="Remove one Passion Juice">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Passion Juice quantity">
+                <button type="button" data-q="1" aria-label="Add one Passion Juice">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Goated Smoothie" data-price="7000">
+              <div class="order-item-info"><span class="order-item-name">Goated Smoothie</span><span class="order-item-price">UGX 7,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Goated Smoothie">
+                <button type="button" data-q="-1" aria-label="Remove one Goated Smoothie">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Goated Smoothie quantity">
+                <button type="button" data-q="1" aria-label="Add one Goated Smoothie">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <div class="order-cat">
+            <h3>Others</h3>
+            <ul class="order-list">
+            <li class="order-item" data-name="Water" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Water</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Water">
+                <button type="button" data-q="-1" aria-label="Remove one Water">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Water quantity">
+                <button type="button" data-q="1" aria-label="Add one Water">+</button>
+              </div>
+            </li>
+            <li class="order-item" data-name="Soda" data-price="2000">
+              <div class="order-item-info"><span class="order-item-name">Soda</span><span class="order-item-price">UGX 2,000</span></div>
+              <div class="qty qty-lg" role="group" aria-label="Quantity of Soda">
+                <button type="button" data-q="-1" aria-label="Remove one Soda">−</button>
+                <input type="number" class="qty-input" min="0" max="20" value="0" inputmode="numeric" aria-label="Soda quantity">
+                <button type="button" data-q="1" aria-label="Add one Soda">+</button>
+              </div>
+            </li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="order-block">
+        <h2 class="order-h">2. Your details</h2>
+        <div class="field">
+          <label for="custName">Your name <span class="req">(required)</span></label>
+          <input id="custName" name="name" type="text" maxlength="60" autocomplete="name" required aria-describedby="nameErr">
+          <p class="field-err" id="nameErr" hidden></p>
+        </div>
+        <div class="field">
+          <label for="pickup">Preferred pickup time <span class="opt">(optional)</span></label>
+          <input id="pickup" name="pickup" type="text" maxlength="40" placeholder="For example: 1:30 PM">
+        </div>
+        <div class="field">
+          <label for="notes">Special instructions <span class="opt">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3" maxlength="300" aria-describedby="notesHelp"></textarea>
+          <p class="help" id="notesHelp">For example: allergies or no onions. <span id="notesCount">0</span>/300</p>
+        </div>
+      </div>
+    </form>
+
+    <aside class="order-summary" id="orderSummary" aria-labelledby="sumTitle">
+      <h2 id="sumTitle">3. Review your order</h2>
+      <p class="text-muted" id="sumEmpty">You have not chosen any items yet.</p>
+      <ul class="sum-list" id="sumList"></ul>
+      <p class="sum-total"><span>Total</span> <strong id="sumTotal">UGX 0</strong></p>
+      <p class="help">The total is worked out from the prices on this website. BAROLLS confirms availability and the final amount on WhatsApp.</p>
+      <div class="form-error" id="formError" role="alert" hidden></div>
+      <button type="submit" form="orderForm" class="btn btn-whatsapp btn-block" id="sendBtn">Send order on WhatsApp</button>
+      <p class="help">WhatsApp opens with your order ready. Tap <strong>Send</strong> in WhatsApp to complete your order.</p>
+
+      <div class="sent-notice" id="sentNotice" role="status" tabindex="-1" hidden>
+        <p><strong>Almost done.</strong> Tap <strong>Send</strong> in WhatsApp to complete your order. It is not confirmed until BAROLLS replies.</p>
+        <p>WhatsApp did not open? Message us on <strong>+256 765 068833</strong>, or copy your order and paste it into a chat with that number.</p>
+        <div class="sent-actions">
+          <button type="button" class="btn btn-outline btn-sm" id="copyBtn">Copy order message</button>
+          <a class="btn btn-outline btn-sm" id="reopenLink" href="https://wa.me/256765068833" target="_blank" rel="noopener noreferrer">Open WhatsApp again</a>
+        </div>
+        <p class="help" id="copyMsg" role="status"></p>
+      </div>
+
+      <details class="preview">
+        <summary>Preview your message</summary>
+        <pre id="msgPreview" tabindex="0">Choose at least one item to see your message.</pre>
+      </details>
+    </aside>
+  </div>
+</section>
+
+<div class="order-bar" id="orderBar" hidden>
+  <span><strong id="barCount">0 items</strong> · <span id="barTotal">UGX 0</span></span>
+  <a href="#orderSummary" class="btn btn-primary btn-sm">Review &amp; send</a>
+</div>
+
+<section class="section section--tight order-notes" aria-labelledby="how-h">
+  <div class="container narrow">
+    <h2 id="how-h">How ordering works</h2>
+    <ol class="steps">
+      <li>Choose your items and enter your name.</li>
+      <li>Check your order and total, then tap <strong>Send order on WhatsApp</strong>.</li>
+      <li>Tap <strong>Send</strong> in WhatsApp. BAROLLS replies to confirm availability and the final arrangements.</li>
+      <li>Collect your order from our Arua location. See our <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</li>
+    </ol>
+    <p class="text-muted">No payment is taken on this website. If you have a food allergy, say so in your special instructions and wait for our confirmation before you collect.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.webp" alt="BAROLLS" width="1010" height="316">
+        <p>...inspired by the locals.</p>
+        <a href="https://wa.me/256765068833" class="btn btn-whatsapp btn-sm js-whatsapp" data-item="" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reviews.html">Feedback</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2>Hours</h2>
+        <ul><li>Monday – Friday: 7:00 AM – 10:00 PM</li><li>Saturday: 8:00 AM – 11:00 PM</li><li>Sunday: 9:00 AM – 9:00 PM</li></ul>
+      </div>
+      <div class="footer-col">
+        <h2>Visit</h2>
+        <ul>
+          <li>Plot No. 1 Staff Lane, Pakwach Highway, Hill Main Roundabout, next to Osgard Liquor Hub, Arua, Uganda</li>
+          <li><a href="tel:+256765068833">+256 765 068833</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> BAROLLS. All Rights Reserved.</span>
+      <span class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></span>
+      <span>Website by Kuany</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/whatsapp.js" defer></script>
+<script src="js/order.js" defer></script>
+</body>
+</html>
